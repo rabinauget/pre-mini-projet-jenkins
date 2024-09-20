@@ -17,3 +17,38 @@ Ce mini projet est dans le cadre du bootcamp Devops de Eazytraing
 **Lien du projet sur Gitlab:** https://gitlab.com/skynet17/mini-projet-gitlab.git
 
 # Contexte du projet
+
+Ce projet a pour objectif de mettre en place un pipeline CI/CD (Intégration Continue et Déploiement Continu) afin d'automatiser et d'optimiser le processus de livraison et de déploiement de l'application en utilisant Jenkins. Cela permettra de réduire les erreurs manuelles, d'accélérer les mises à jour et d'assurer une intégration fluide et homogène à chaque étape.
+
+Le pipeline sera déclenché à chaque push de code vers Github, assurant que les nouvelles modifications sont automatiquement compilées, testées, intégrées, puis déployées sur les serveurs de production.
+
+# Fonctionnement du pipeline
+
+Le pipeline CI/CD sera structuré en plusieurs étapes clés:
+
+1. **La phase de Build :** consistera à la compilation du code source et construction des artéfacts nécessaires pour le déploiement.
+
+2. **La phase de Test de l'artifact (Test d'acceptation) :** sera la partie où nous allons tester et confirmer que l'artéfact précédement créé est bien fonctionnel.
+
+3. **La phase de sauvegarde de l'image (Release image) :** Après avoir confirmer que l'artéfact est fonctionnel, nous allons le sauvegarder afin de pouvoir le déployer sur les serveurs tests/prod ou le réutiliser ultérieurement.
+
+6. **La phase de déploiment sur le serveur de production (Deploy prod & Test prod):** L'application, ayant été confirmée comme fonctionnelle à toutes les étapes, peut maintenant être déployée sur l'environnement de production pour être utilisée par les clients.
+
+# Application
+
+Donc le pipeline sera composé de:
+
++ **Le fichier Jenkinsfile :** où nous allons décrire tous les étapes du pipeline CI/CD.
++ **Le fichier Dockerfile :** nous servira à créer l'image docker de notre application pour pouvoir le conteneuriser.
++ **nginx.conf :** vu qu'on va utiliser nginx comme serveur web dans le container, ce fichier sera son fichier de configuration.
++ Le code source sera télécharger depuis le repos github directement dans l'image docker: https://github.com/diranetafen/static-website-example.git
+
+# Infrastructure
+
+Nous allons utiliser les technologies ci-dessous:
+
++ **Hôte physique :** Windows 11 avec un CPU intel core i7-8ème 2.1GHz et 16GB RAM
++ **Jenkins :** Nous allons utiliser le gitlab public, accessible sur https://gitlab.com/
++ **Heroku :** Et pour déployer notre application, nous allons le déployer sur Heroku qui est une plateforme de déploiement d'application (https://www.heroku.com/)
+
+# Préparation de l'environnement
