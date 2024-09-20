@@ -10,7 +10,7 @@ Ce mini projet est dans le cadre du bootcamp Devops de Eazytraing
 
 **Période** : Mai - Juin - Juillet 2024
 
-**Date de réalisation**: 15 Juin 2024
+**Date de réalisation**: 30 Juin 2024
 
 **LinkedIn** : www.linkedin.com/in/auget-rabina-61663314a
 
