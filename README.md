@@ -16,7 +16,7 @@ Ce mini projet est dans le cadre du bootcamp Devops de Eazytraing
 
 # Contexte du projet
 
-Ce projet a pour objectif de mettre en place un pipeline CI/CD (Intégration Continue et Déploiement Continu) afin d'automatiser et d'optimiser le processus de livraison et de déploiement de l'application en utilisant Jenkins. Cela permettra de réduire les erreurs manuelles, d'accélérer les mises à jour et d'assurer une intégration fluide et homogène à chaque étape.
+Ce projet a pour objectif de mettre en place un pipeline CI/CD (Intégration Continue et Déploiement Continu) afin d'automatiser et d'optimiser le processus de livraison et de déploiement de l'application en utilisant Jenkins. Cela permettra de réduire les erreurs manuelles, d'accélérer les mises à jour et d'assurer une intégration fluide et homogène à chaque étape grâce à Jenkins.
 
 Le pipeline sera déclenché à chaque push de code vers Github, assurant que les nouvelles modifications sont automatiquement compilées, testées, intégrées, puis déployées sur les serveurs de production.
 
