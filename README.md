@@ -14,8 +14,6 @@ Ce mini projet est dans le cadre du bootcamp Devops de Eazytraing
 
 **LinkedIn** : www.linkedin.com/in/auget-rabina-61663314a
 
-**Lien du projet sur Gitlab:** https://gitlab.com/skynet17/mini-projet-gitlab.git
-
 # Contexte du projet
 
 Ce projet a pour objectif de mettre en place un pipeline CI/CD (Intégration Continue et Déploiement Continu) afin d'automatiser et d'optimiser le processus de livraison et de déploiement de l'application en utilisant Jenkins. Cela permettra de réduire les erreurs manuelles, d'accélérer les mises à jour et d'assurer une intégration fluide et homogène à chaque étape.
