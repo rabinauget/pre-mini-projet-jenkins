@@ -46,7 +46,8 @@ Donc le pipeline sera composé de:
 Nous allons utiliser les technologies ci-dessous:
 
 + **Hôte physique :** Windows 11 avec un CPU intel core i7-8ème 2.1GHz et 16GB RAM
-+ **Jenkins :** Nous allons utiliser le gitlab public, accessible sur https://gitlab.com/
++ **Hôte serveur:** Droplet 2CPU/4GB RAM/120G SSD sur DigitalOcean
++ **Jenkins :** Nous allons ensuite installer Jenkins sur le serveur hôte de DigitalOcean via Docker, accessible sur 
 + **Heroku :** Et pour déployer notre application, nous allons le déployer sur Heroku qui est une plateforme de déploiement d'application (https://www.heroku.com/)
 
 # Préparation de l'environnement
