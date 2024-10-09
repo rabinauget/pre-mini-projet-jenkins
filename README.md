@@ -34,20 +34,22 @@ Le pipeline CI/CD sera structuré en plusieurs étapes clés:
 
 # Application
 
-Donc le pipeline sera composé de:
+Donc le pipeline sera composé des fichiers ci-dessous:
 
-+ **Le fichier Jenkinsfile :** où nous allons décrire tous les étapes du pipeline CI/CD.
-+ **Le fichier Dockerfile :** nous servira à créer l'image docker de notre application pour pouvoir le conteneuriser.
++ **Jenkinsfile :** où nous allons énumérer toutes les étapes du pipeline CI/CD.
++ **Dockerfile :** nous servira à créer l'image docker de notre application pour pouvoir le conteneuriser.
 + **nginx.conf :** vu qu'on va utiliser nginx comme serveur web dans le container, ce fichier sera son fichier de configuration.
-+ Le code source sera télécharger depuis le repos github directement dans l'image docker: https://github.com/diranetafen/static-website-example.git
++ Le code source de l'application sera télécharger directement depuis le repos github dans l'image docker: https://github.com/diranetafen/static-website-example.git
 
-# Infrastructure
+# Infrastructure et techno
 
 Nous allons utiliser les technologies ci-dessous:
 
 + **Hôte physique :** Windows 11 avec un CPU intel core i7-8ème 2.1GHz et 16GB RAM
 + **Hôte serveur:** Droplet 2CPU/4GB RAM/120G SSD sur DigitalOcean
-+ **Jenkins :** Nous allons ensuite installer Jenkins sur le serveur hôte de DigitalOcean via Docker, accessible sur 
-+ **Heroku :** Et pour déployer notre application, nous allons le déployer sur Heroku qui est une plateforme de déploiement d'application (https://www.heroku.com/)
++ **Jenkins :** Nous allons ensuite installer Jenkins sur le serveur de DigitalOcean via Docker
++ **Heroku :** Et pour déployer notre application, nous allons le déployer sur Heroku qui est une plateforme de déploiement d'application en ligne (https://www.heroku.com/)
 
 # Préparation de l'environnement
+
+
