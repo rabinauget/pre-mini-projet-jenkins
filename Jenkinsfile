@@ -21,7 +21,7 @@ pipeline {
                 script {
                     sh '''
                         docker run --name $IMAGE_NAME -d -p 81:5000 -e PORT=5000 toshiroskynet/$IMAGE_NAME:$IMAGE_TAG
-                        sleep 5
+                        sleep 10
                     '''
                 }
             }
