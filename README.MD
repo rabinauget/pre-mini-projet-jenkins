@@ -1,3 +1,3 @@
 PRE-MINI-PROJET-JENKINS
 
-<a href='https://jenkins.auget-labs.space/job/alpinehelloworld/'><img src='https://jenkins.auget-labs.space/job/alpinehelloworld/badge/icon'></a>
+[![Build Status](https://jenkins.auget-labs.space/buildStatus/icon?job=alpinehelloworld)](https://jenkins.auget-labs.space/job/alpinehelloworld/)
