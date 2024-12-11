@@ -58,6 +58,7 @@ pipeline {
             steps {
                 script {
                     sh '''
+                        curl -fsSL https://deb.nodesource.com/setup_16.x | bash apt-get install -y nodejs
                         npm i -g heroku@7.68.0
                         heroku container:login
                         heroku create $STAGING || echo "project already exist"
@@ -78,6 +79,7 @@ pipeline {
             steps {
                 script {
                     sh '''
+                        curl -fsSL https://deb.nodesource.com/setup_16.x | bash apt-get install -y nodejs
                         npm i -g heroku@7.68.0
                         heroku container:login
                         heroku create $PRODUCTION || echo "project already exist"
